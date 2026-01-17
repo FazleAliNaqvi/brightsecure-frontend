@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-dark;
+  }
+
+  /* Focus styles */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-primary-100 text-primary-900;
+  }
+}
+
+@layer components {
+  /* Airbnb-style button base */
+  .btn {
+    @apply inline-flex items-center justify-center font-semibold rounded-lg
+           transition-all duration-200 ease-out
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-500 text-white
+           hover:bg-primary-600 active:bg-primary-700
+           shadow-sm hover:shadow-md;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-dark border border-dark
+           hover:bg-surface active:bg-gray-100;
+  }
+
+  .btn-ghost {
+    @apply btn text-dark
+           hover:bg-surface active:bg-gray-100;
+  }
+
+  .btn-sm {
+    @apply px-4 py-2 text-sm;
+  }
+
+  .btn-md {
+    @apply px-6 py-3 text-base;
+  }
+
+  .btn-lg {
+    @apply px-8 py-4 text-lg;
+  }
+
+  /* Input styles */
+  .input {
+    @apply w-full px-4 py-3 rounded-lg border border-border
+           text-dark placeholder:text-light
+           focus:border-dark focus:ring-1 focus:ring-dark
+           transition-colors duration-200;
+  }
+
+  .input-error {
+    @apply border-red-500 focus:border-red-500 focus:ring-red-500;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-xl border border-border shadow-airbnb;
+  }
+
+  .card-hover {
+    @apply card transition-all duration-200
+           hover:shadow-airbnb-lg hover:border-gray-300;
+  }
+
+  /* Link styles */
+  .link {
+    @apply text-dark underline underline-offset-2
+           hover:text-primary-500 transition-colors;
+  }
+
+  .link-primary {
+    @apply text-primary-500 hover:text-primary-600
+           font-medium transition-colors;
+  }
+}
+
+@layer utilities {
+  /* Airbnb-style gradients */
+  .gradient-primary {
+    @apply bg-gradient-to-r from-primary-500 to-pink-500;
+  }
+
+  .gradient-secondary {
+    @apply bg-gradient-to-r from-secondary-500 to-teal-400;
+  }
+
+  /* Text utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Hide scrollbar */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Smooth scroll */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+}

@@ -1,0 +1,90 @@
+'use client';
+
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
+import { Button } from '@/components/ui';
+
+export default function IndustriesLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <Link href="/" className="text-xl font-bold text-primary-500">
+              Bright Secure
+            </Link>
+            <div className="hidden md:flex items-center gap-6">
+              <Link href="/industries" className="text-gray-600 hover:text-primary-500 text-sm font-medium">
+                Industries
+              </Link>
+              <Link href="/pricing" className="text-gray-600 hover:text-primary-500 text-sm font-medium">
+                Pricing
+              </Link>
+            </div>
+            <div className="flex items-center gap-4">
+              <Link href="/login">
+                <Button variant="outline" size="sm">Sign In</Button>
+              </Link>
+              <Link href="/register">
+                <Button size="sm">Start Free Trial</Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main>{children}</main>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-lg font-bold mb-4">Bright Secure</h3>
+              <p className="text-gray-400 text-sm">
+                HIPAA & PIPEDA compliant AI receptionist for healthcare and professional services.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Industries</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><Link href="/industries/legal" className="hover:text-white">Legal</Link></li>
+                <li><Link href="/industries/medical" className="hover:text-white">Medical</Link></li>
+                <li><Link href="/industries/dental" className="hover:text-white">Dental</Link></li>
+                <li><Link href="/industries/accounting" className="hover:text-white">Accounting</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">More Industries</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><Link href="/industries/financial" className="hover:text-white">Financial Advisory</Link></li>
+                <li><Link href="/industries/chiropractic" className="hover:text-white">Chiropractic</Link></li>
+                <li><Link href="/industries/therapy" className="hover:text-white">Therapy</Link></li>
+                <li><Link href="/industries/veterinary" className="hover:text-white">Veterinary</Link></li>
+                <li><Link href="/industries/real-estate" className="hover:text-white">Real Estate</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Company</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><Link href="/pricing" className="hover:text-white">Pricing</Link></li>
+                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+                <li><Link href="/privacy" className="hover:text-white">Privacy Policy</Link></li>
+                <li><Link href="/terms" className="hover:text-white">Terms of Service</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
+            &copy; {new Date().getFullYear()} Bright Secure. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
