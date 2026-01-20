@@ -338,4 +338,49 @@ export const notificationsApi = {
   delete: (id: string) => api.delete<ApiResponse>(`/notifications/${id}/`),
 };
 
+// Prompt Variants API (A/B Testing)
+export const promptVariantsApi = {
+  list: (params?: { organization_id?: string; status?: string }) =>
+    api.get<ApiResponse>('/calls/prompt-variants/', { params }),
+
+  get: (id: string) => api.get<ApiResponse>(`/calls/prompt-variants/${id}/`),
+
+  create: (data: {
+    organization_id: string;
+    name: string;
+    description?: string;
+    system_prompt: string;
+    first_message?: string;
+    traffic_percentage?: number;
+    is_control?: boolean;
+  }) => api.post<ApiResponse>('/calls/prompt-variants/', data),
+
+  update: (id: string, data: Partial<{
+    name: string;
+    description: string;
+    system_prompt: string;
+    first_message: string;
+    traffic_percentage: number;
+    is_control: boolean;
+  }>) => api.patch<ApiResponse>(`/calls/prompt-variants/${id}/`, data),
+
+  delete: (id: string) => api.delete<ApiResponse>(`/calls/prompt-variants/${id}/`),
+
+  activate: (id: string, trafficPercentage?: number) =>
+    api.post<ApiResponse>(`/calls/prompt-variants/${id}/activate/`, {
+      traffic_percentage: trafficPercentage ?? 50,
+    }),
+
+  pause: (id: string) =>
+    api.post<ApiResponse>(`/calls/prompt-variants/${id}/pause/`),
+
+  promote: (id: string) =>
+    api.post<ApiResponse>(`/calls/prompt-variants/${id}/promote/`),
+
+  getAnalytics: (organizationId: string) =>
+    api.get<ApiResponse>('/calls/prompt-analytics/', {
+      params: { organization_id: organizationId },
+    }),
+};
+
 export default api;
