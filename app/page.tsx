@@ -86,7 +86,7 @@ export default function HomePage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-40 pb-36 lg:pt-48 lg:pb-48 px-4 sm:px-6 lg:px-8">
+      <section className="pt-28 pb-20 lg:pt-36 lg:pb-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark leading-tight">
@@ -117,7 +117,7 @@ export default function HomePage() {
       </section>
 
       {/* Voicemail Problem Section */}
-      <section className="py-36 lg:py-48 bg-gray-900 text-white">
+      <section className="py-20 lg:py-28 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-20 items-center">
             {/* The Problem */}
@@ -178,7 +178,7 @@ export default function HomePage() {
       </section>
 
       {/* Voice Demo Section */}
-      <section id="hear-it-live" className="py-36 lg:py-48 bg-gray-50">
+      <section id="hear-it-live" className="py-24 lg:py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div>
@@ -227,7 +227,7 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-36 lg:py-48 bg-surface">
+      <section id="features" className="py-24 lg:py-36 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-dark">
@@ -292,7 +292,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Bright Secure Section */}
-      <section id="why-bright-secure" className="py-36 lg:py-48">
+      <section id="why-bright-secure" className="py-28 lg:py-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <span className="text-primary-500 font-semibold text-sm uppercase tracking-wider">
@@ -522,7 +522,7 @@ export default function HomePage() {
       </section>
 
       {/* Industries Section */}
-      <section id="industries-preview" className="py-36 lg:py-48 bg-surface">
+      <section id="industries-preview" className="py-28 lg:py-40 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-dark">
@@ -566,7 +566,7 @@ export default function HomePage() {
       </section>
 
       {/* Compliance Section */}
-      <section className="py-36 lg:py-48 bg-dark text-white">
+      <section className="py-28 lg:py-40 bg-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-20 items-center">
             <div>
@@ -608,7 +608,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-36 lg:py-48">
+      <section className="py-28 lg:py-40">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-dark mb-8">
             Ready to transform your practice?
@@ -626,7 +626,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-surface py-20 lg:py-24 border-t border-border">
+      <footer className="bg-surface py-16 lg:py-20 border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-primary-500 font-bold text-xl">Bright Secure</div>
