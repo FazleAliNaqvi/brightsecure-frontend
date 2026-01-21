@@ -86,18 +86,18 @@ export default function HomePage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark leading-tight">
               Never Miss a Call.{' '}
               <span className="text-primary-500">Every Conversation Delivered Securely.</span>
             </h1>
-            <p className="mt-6 text-xl text-light max-w-2xl mx-auto">
+            <p className="mt-8 text-xl text-light max-w-2xl mx-auto">
               AI receptionist answers your phones 24/7, books appointments, and sends
               encrypted transcripts to your team—HIPAA & PIPEDA compliant.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/register">
                 <Button size="lg" rightIcon={<ArrowRight className="h-5 w-5" />}>
                   Start Free Trial
@@ -109,7 +109,7 @@ export default function HomePage() {
                 </Button>
               </a>
             </div>
-            <p className="mt-4 text-sm text-light">
+            <p className="mt-6 text-sm text-light">
               14-day free trial • No credit card required
             </p>
           </div>
@@ -117,9 +117,9 @@ export default function HomePage() {
       </section>
 
       {/* Voicemail Problem Section */}
-      <section className="py-16 bg-gray-900 text-white">
+      <section className="py-20 lg:py-28 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-16 lg:gap-20 items-center">
             {/* The Problem */}
             <div>
               <span className="text-red-400 font-semibold text-sm uppercase tracking-wider">
@@ -178,9 +178,9 @@ export default function HomePage() {
       </section>
 
       {/* Voice Demo Section */}
-      <section id="hear-it-live" className="py-20 bg-gray-50">
+      <section id="hear-it-live" className="py-24 lg:py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div>
               <span className="text-primary-500 font-semibold text-sm uppercase tracking-wider">
                 Hear It In Action
@@ -227,19 +227,19 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 bg-surface">
+      <section id="features" className="py-24 lg:py-32 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-dark">
               Everything you need to manage client communications
             </h2>
-            <p className="mt-4 text-lg text-light max-w-2xl mx-auto">
+            <p className="mt-6 text-lg text-light max-w-2xl mx-auto">
               Built for healthcare and professional services that require the highest
               level of security and compliance.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
             {/* Feature 1 */}
             <div className="bg-white rounded-xl p-6 shadow-airbnb">
               <div className="h-12 w-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
@@ -292,16 +292,16 @@ export default function HomePage() {
       </section>
 
       {/* Why Bright Secure Section */}
-      <section id="why-bright-secure" className="py-20">
+      <section id="why-bright-secure" className="py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <span className="text-primary-500 font-semibold text-sm uppercase tracking-wider">
               Why Bright Secure
             </span>
-            <h2 className="mt-2 text-3xl md:text-4xl font-bold text-dark">
+            <h2 className="mt-4 text-3xl md:text-4xl font-bold text-dark">
               Your receptionist's most reliable backup
             </h2>
-            <p className="mt-4 text-lg text-light max-w-3xl mx-auto">
+            <p className="mt-6 text-lg text-light max-w-3xl mx-auto">
               We don't replace your front desk team—we empower them. When they're busy helping
               someone in person, on another call, at lunch, or it's after hours, our AI ensures
               every caller gets the attention they deserve.
@@ -309,7 +309,7 @@ export default function HomePage() {
           </div>
 
           {/* Main Benefits Grid */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-10 mb-20">
             {/* Benefit 1 */}
             <div className="bg-white rounded-2xl p-8 shadow-airbnb border border-gray-100">
               <div className="h-14 w-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mb-6">
@@ -393,9 +393,9 @@ export default function HomePage() {
           </div>
 
           {/* Use Cases Row */}
-          <div className="bg-surface rounded-2xl p-8 mb-16">
-            <h3 className="text-xl font-bold text-dark mb-6 text-center">When Your AI Backup Steps In</h3>
-            <div className="grid md:grid-cols-4 gap-6">
+          <div className="bg-surface rounded-2xl p-8 lg:p-12 mb-20">
+            <h3 className="text-xl font-bold text-dark mb-8 text-center">When Your AI Backup Steps In</h3>
+            <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="h-12 w-12 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-sm">
                   <Users className="h-6 w-6 text-primary-500" />
@@ -436,7 +436,7 @@ export default function HomePage() {
           </div>
 
           {/* Stats Row */}
-          <div className="grid md:grid-cols-4 gap-6 mb-16">
+          <div className="grid md:grid-cols-4 gap-6 lg:gap-8 mb-20">
             <div className="bg-white rounded-xl p-6 text-center shadow-sm border border-gray-100">
               <div className="text-4xl font-bold text-primary-500 mb-2">35%</div>
               <p className="text-light text-sm">Average increase in captured leads</p>
@@ -456,7 +456,7 @@ export default function HomePage() {
           </div>
 
           {/* Non-regulated industries callout */}
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-16 flex items-start gap-4">
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 lg:p-8 mb-20 flex items-start gap-4 lg:gap-6">
             <div className="h-10 w-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
               <Zap className="h-5 w-5 text-blue-600" />
             </div>
@@ -472,8 +472,8 @@ export default function HomePage() {
           </div>
 
           {/* Global Compliance */}
-          <div className="bg-gradient-to-r from-dark to-gray-800 rounded-2xl p-8 text-white">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="bg-gradient-to-r from-dark to-gray-800 rounded-2xl p-8 lg:p-12 text-white">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
                 <div className="flex items-center gap-2 mb-4">
                   <Globe className="h-6 w-6 text-secondary-400" />
@@ -522,19 +522,19 @@ export default function HomePage() {
       </section>
 
       {/* Industries Section */}
-      <section id="industries-preview" className="py-20 bg-surface">
+      <section id="industries-preview" className="py-24 lg:py-32 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-dark">
               Support for your receptionist, not a replacement
             </h2>
-            <p className="mt-4 text-lg text-light max-w-2xl mx-auto">
+            <p className="mt-6 text-lg text-light max-w-2xl mx-auto">
               When your front desk is busy, away, or it's after hours—our AI ensures no call goes unanswered.
               Secure transcripts emailed to up to 4 team members per line.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
             {[
               { name: 'Law Firms', href: '/industries/legal' },
               { name: 'Medical Practices', href: '/industries/medical' },
@@ -555,7 +555,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-12">
             <Link href="/industries">
               <Button variant="outline" rightIcon={<ArrowRight className="h-4 w-4" />}>
                 View All Industries
@@ -566,9 +566,9 @@ export default function HomePage() {
       </section>
 
       {/* Compliance Section */}
-      <section className="py-20 bg-dark text-white">
+      <section className="py-24 lg:py-32 bg-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-16 lg:gap-20 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Compliance you can trust
@@ -608,12 +608,12 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-24 lg:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-8">
             Ready to transform your practice?
           </h2>
-          <p className="text-lg text-light mb-8">
+          <p className="text-lg text-light mb-10">
             Join hundreds of healthcare and professional service providers who trust
             Bright Secure for their client communications.
           </p>
@@ -626,7 +626,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-surface py-12 border-t border-border">
+      <footer className="bg-surface py-16 border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-primary-500 font-bold text-xl">Bright Secure</div>

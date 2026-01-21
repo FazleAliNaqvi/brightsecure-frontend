@@ -58,6 +58,11 @@ const config: Config = {
         '15': '60px',
         '18': '72px',
         '22': '88px',
+        '26': '104px',  // Section spacing (desktop)
+        '28': '112px',
+        '32': '128px',
+        '36': '144px',
+        '40': '160px',
       },
       borderRadius: {
         sm: '4px',

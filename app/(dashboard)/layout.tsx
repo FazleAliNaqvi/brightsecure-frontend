@@ -182,7 +182,7 @@ export default function DashboardLayout({
                     <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-airbnb-lg border border-border z-20">
                       <div className="p-2">
                         <Link
-                          href="/dashboard/settings"
+                          href="/settings"
                           className="flex items-center gap-2 px-3 py-2 text-sm text-dark rounded-md hover:bg-surface"
                           onClick={() => setUserMenuOpen(false)}
                         >
