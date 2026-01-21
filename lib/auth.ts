@@ -10,6 +10,8 @@ interface User {
   phone?: string;
   role: string;
   is_verified: boolean;
+  is_staff?: boolean;
+  is_superuser?: boolean;
   profile?: {
     avatar?: string;
     timezone: string;
