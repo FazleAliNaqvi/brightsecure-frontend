@@ -9,7 +9,6 @@ import {
   Bell,
   Shield,
   ChevronRight,
-  Wand2,
 } from 'lucide-react';
 import { Card } from '@/components/ui';
 import { Spinner } from '@/components/ui/Spinner';
@@ -22,10 +21,9 @@ import {
   TeamSettings,
   VoiceSettings,
   NotificationSettings,
-  AIOptimizationSettings,
 } from '@/components/settings';
 
-type SettingsTab = 'profile' | 'hours' | 'team' | 'voice' | 'optimization' | 'notifications';
+type SettingsTab = 'profile' | 'hours' | 'team' | 'voice' | 'notifications';
 
 interface TabConfig {
   id: SettingsTab;
@@ -58,12 +56,6 @@ const TABS: TabConfig[] = [
     label: 'AI Receptionist',
     icon: Mic,
     description: 'Voice and greeting settings',
-  },
-  {
-    id: 'optimization',
-    label: 'AI Optimization',
-    icon: Wand2,
-    description: 'A/B test and optimize prompts',
   },
   {
     id: 'notifications',
@@ -241,12 +233,6 @@ export default function SettingsPage() {
             <VoiceSettings
               organization={organization}
               onUpdate={handleOrganizationUpdate}
-            />
-          )}
-
-          {activeTab === 'optimization' && (
-            <AIOptimizationSettings
-              organizationId={organization.id}
             />
           )}
 
